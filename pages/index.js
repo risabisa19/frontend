@@ -1,6 +1,6 @@
-
+import Script from "next/script";
 export default function Home(props) {
-    console.log(props.web.Datajson[0])
+    
     return (
         <div id="page-top">
             <nav className="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -170,6 +170,7 @@ export default function Home(props) {
             <footer className="bg-light py-5">
                 <div className="container px-4 px-lg-5"><div className="small text-center text-muted">Copyright © 2022 - {props.web.Datajson[0].body[5].footer}</div></div>
             </footer>
+            <Script src="assets/js/script.js" />
         </div>
     )
 }
