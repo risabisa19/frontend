@@ -177,7 +177,8 @@ export default function Home(props) {
 
 export async function getServerSideProps(context){
     const locallink ="https://mantappu.herokuapp.com/"
-    const onelineLink =""
+   
+
     const dataResponse = await fetch(locallink);
     const dataJson = await dataResponse.json();
     return{
